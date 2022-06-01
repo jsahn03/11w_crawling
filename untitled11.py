@@ -49,4 +49,4 @@ for i in range(0, x):
   dict[club_name] = pts_score
 print('팀 이름을 입력하세요.')
 find = input()
-print(dict[find])
+print(f"{find}의 포인트는 {dict[find]}입니다.")
