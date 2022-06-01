@@ -23,3 +23,30 @@ print("[ 프리미어리그 구단 순위 ]")
 Clubs = target.find_all("span", {'class':'long'})
 for Club in Clubs:
     print(Club.text)
+    
+
+    
+    
+    
+    
+    
+    
+ptss = target.find_all('td', {'class':'points'})
+
+l1 = []
+l2 = []
+for Club in Clubs:
+  l1.append(Club.text)
+
+for pts in ptss:
+  l2.append(int(pts.text))
+
+x = len(l1)
+dict = {}
+for i in range(0, x):
+  club_name = l1[i]
+  pts_score = l2[i]
+  dict[club_name] = pts_score
+print('팀 이름을 입력하세요.')
+find = input()
+print(dict[find])
