@@ -1,0 +1,3 @@
+팀 이름을 입력하세요.
+Manchester United
+Manchester United의 포인트는 58입니다.
